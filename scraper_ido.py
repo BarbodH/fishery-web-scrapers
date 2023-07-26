@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 import os
+import re
+from datetime import datetime
 
 
 def scrap_page(url, dir):
@@ -10,17 +12,37 @@ def scrap_page(url, dir):
 
     # Scrap HTML content to extract discussion text
     title_text = soup.find("h1", class_="page-title").text
-    replies = soup.find_all("div", class_="bbp-reply-content entry-content is-magnific")
+    reply_divs = soup.find_all("article", class_="cf")
 
     # Write discussion text to text file
     # Note: '/' and '\' in file name cause runtime errors
     modified_title = title_text.replace("/", "-").replace("\\", "-")
     with open(f"{dir}/{modified_title}.txt", "a") as new_file:
         new_file.truncate(0)  # clear file content
-        for reply in replies:
-            if reply.find(is_immediate_p):
-                reply_text = reply.find(is_immediate_p).text
-                new_file.write(reply_text + "\n\n")
+        for reply_div in reply_divs:
+            if reply_div:
+                # Extract data corresponding to each response
+                id = re.search(r"\d+", reply_div["id"]).group()
+                author = reply_div.find("span", "bbp-author-name").text
+
+                date_raw = reply_div.find("span", "bbp-reply-post-date").text
+                date = datetime.strptime(date_raw, "%B %d, %Y at %I:%M %p")
+
+                num_posts = re.search(
+                    r"\d+", reply_div.find("div", "bbp-author-post-count").text
+                ).group()
+
+                reply_paragraphs = reply_div.find(
+                    "div", class_="bbp-reply-content entry-content is-magnific"
+                ).find_all(is_immediate_p)
+                reply = " ".join(
+                    [
+                        paragraph.get_text().strip().replace("\n", " ")
+                        for paragraph in reply_paragraphs
+                    ]
+                )
+
+                new_file.write(f"{id}\n{author}\n{date}\n{num_posts}\n{reply}\n\n")
 
 
 def is_immediate_p(tag):

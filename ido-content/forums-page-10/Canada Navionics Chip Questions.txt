@@ -1,10 +1,30 @@
+1218411
+keepcasting
+2010-04-20 12:47:00
+445
 The lake that I am going to in NW Ontario is not on the Navionics Canada chip according to their website. The lake is Umfreville which is part of the English River system. My question is, are there good topo type background maps on the chip or basically what is the detail available for lakes that aren’t listed as “on the chip”? I have seen a couple on sale and would pick it up, but only if I am at least going to get an accurate lake outline. Thanks!
 
-You will see a blue outline of the lake your fishing. No topographical detail.. You will be able to drop icons of camp, rock piles, even good fishing spots but you will not see any detail or contour of the lake or the land. Establish a safe trail on day one. Day 2 start a new trail but leave the safe trail on the screen to use it as a point of reference. Each day you go out start a new trail if you want, just make sure you change the colors as well otherwise your screen may look like and etch a sketch by weeks end…. 
+865340
+Calvin Svihel
+2010-04-20 12:58:00
+3862
+You will see a blue outline of the lake your fishing. No topographical detail.. You will be able to drop icons of camp, rock piles, even good fishing spots but you will not see any detail or contour of the lake or the land. Establish a safe trail on day one. Day 2 start a new trail but leave the safe trail on the screen to use it as a point of reference. Each day you go out start a new trail if you want, just make sure you change the colors as well otherwise your screen may look like and etch a sketch by weeks end….
 
-Calvin is correct.
+865363
+Grouse_Dog
+2010-04-20 13:49:00
+2043
+Calvin is correct. Most of Canada is not charted that same as the USA Dog
 
-I had the same question and was contiplating on buying the Canada navionics chip so thanks for the responses. 
+865411
+wes_bergemann
+2010-04-20 16:25:00
+458
+I had the same question and was contiplating on buying the Canada navionics chip so thanks for the responses. However, how accurate is the blue outline of the lakes where contours are not provided. I know that I had a very rough and in-accurate detail of the Canada lakes with my garmin until it was remedied with the Canada topo maps. I don’t need the topo detail (elevations etc.) But would like to see a fairly accurate outline at least.
 
+865469
+keepcasting
+2010-04-20 19:11:00
+445
 There are other guys in our group that have the Freedom maps F40T which has great topographical mapping, however, those are no longer in production or available from Lowrance. That is the main reason I am inquiring about that Navionics chip and how detailed the generic lake outline is. If the lake outline is accurate then that will be just as good. Thanks for the help.
 
