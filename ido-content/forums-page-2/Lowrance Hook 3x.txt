@@ -1,0 +1,4 @@
+I just got this fishfinder and I’m having some trouble with the initial setup. I have the transducer on a bracket attached to the transom around 12” from the motor. The depth and bottom contour seems to be fine but I’m getting fish signals that’s aren’t there. Constantly shows a lot of fish everywhere. I’m using it in salt water on the Canadian east coast looking for Cod fish. I think the transducer is level but not 100% sure as the bracket is installed while in the water. Any pointers?
+
+Turn off the fish icons and just use it sonar “arcs” to identify fish.
+
