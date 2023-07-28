@@ -3,6 +3,7 @@ import requests
 import os
 import re
 from datetime import datetime
+import csv
 
 
 def scrap_page(url, dir):
@@ -17,8 +18,10 @@ def scrap_page(url, dir):
     # Write discussion text to text file
     # Note: '/' and '\' in file name cause runtime errors
     modified_title = title_text.replace("/", "-").replace("\\", "-")
-    with open(f"{dir}/{modified_title}.txt", "a") as new_file:
+    with open(f"{dir}/{modified_title}.csv", "a") as new_file:
         new_file.truncate(0)  # clear file content
+        csv_writer = csv.writer(new_file)
+
         for reply_div in reply_divs:
             if reply_div:
                 # Extract data corresponding to each response
@@ -42,7 +45,8 @@ def scrap_page(url, dir):
                     ]
                 )
 
-                new_file.write(f"{id}\n{author}\n{date}\n{num_posts}\n{reply}\n\n")
+                # Organize the extracted information into a CSV file
+                csv_writer.writerow([id, author, date, num_posts, reply])
 
 
 def is_immediate_p(tag):
