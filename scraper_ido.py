@@ -68,7 +68,7 @@ def main():
     for page_index in range(1, max_index + 1):
         # Create a new directory for each navigation page
         dir_name = f"forums-page-{page_index}"
-        dir = os.path.join(base_path, f"ido-content", dir_name)
+        dir = os.path.join(base_path, f"content-ido", dir_name)
         if not os.path.exists(dir):
             os.makedirs(dir)
 
