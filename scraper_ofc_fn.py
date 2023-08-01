@@ -84,7 +84,7 @@ def main():
 
     # Retrieve contents of all pages
     base_path = os.getcwd()
-    for page_index in range(5, 7):
+    for page_index in range(1, max_index + 1):
         # Create a new directory for each navigation page
         dir_name = f"forums-page-{page_index}"
         dir = os.path.join(base_path, f"content-ofc-fn", dir_name)
