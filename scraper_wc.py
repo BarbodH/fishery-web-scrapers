@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import os
 import re
-from datetime import datetime
+import datetime
 import csv
 
 
@@ -35,7 +35,12 @@ def scrap_page(url, dir, truncate_file):
 
                 date_div = reply_div.find_all("div", class_="normal")[1]
                 date_raw = date_div.text.strip()
-                date = datetime.strptime(date_raw, "%m-%d-%Y, %I:%M %p")
+                if "Today" in date_raw:
+                    date = datetime.date.today()
+                elif "Yesterday" in date_raw:
+                    date = datetime.date.today() - datetime.timedelta(days=1)
+                else:
+                    date = datetime.datetime.strptime(date_raw, "%m-%d-%Y, %I:%M %p")
 
                 if not "n/a" in reply_div.find(is_num_posts).text:
                     num_posts = (
@@ -50,11 +55,20 @@ def scrap_page(url, dir, truncate_file):
                 else:
                     num_posts = 0
 
+                # Remove the quote block
+                # Note: the extra space at the end of 'style' parameter value is necessary
+                quote = reply_div.find(is_reply_message).find(
+                    "div", style="margin:20px; margin-top:5px; "
+                )
+                if quote:
+                    quote.extract()
+
                 reply_intermediate = (
                     reply_div.find(is_reply_message)
                     .get_text()
                     .strip()
                     .replace("\n", "")
+                    .replace("", "'")
                 )
                 reply = re.sub(r"\s+", " ", reply_intermediate)
 
@@ -77,6 +91,12 @@ def scrap_page(url, dir, truncate_file):
 
 
 def is_thread_title(tag):
+    if tag.get("id"):
+        return "threadtitle" in tag.get("id")
+    return False
+
+
+def is_thread_title_anchor(tag):
     if tag.get("id"):
         return "thread_title" in tag.get("id")
     return False
@@ -119,7 +139,7 @@ def main():
 
     # Retrieve contents of all pages
     base_path = os.getcwd()
-    for page_index in range(1, 6):  # max_index + 1
+    for page_index in range(1, 2):  # max_index + 1
         # Create a new directory for each navigation page
         dir_name = f"forums-page-{page_index}"
         dir = os.path.join(base_path, f"content-wc", dir_name)
@@ -127,15 +147,23 @@ def main():
             os.makedirs(dir)
 
         # Retrieve all the forum names in the current navigation page
-        url = f"{base_url}&page={60}"
+        url = f"{base_url}&page={page_index}"
         current_navigation_html_text = requests.get(url).text
         soup = BeautifulSoup(current_navigation_html_text, "lxml")
 
-        anchors = soup.find_all(is_thread_title)
-        for anchor in anchors:
+        thread_titles = soup.find_all(is_thread_title)
+        for title in thread_titles:
+            if page_index > 1:
+                # Sticky Threads repeat in all pages; only consider the ones in the first page
+                icons_span = title.find("span", style="float:right")
+                if icons_span and icons_span.find("img", alt="Sticky Thread"):
+                    continue
+
+            anchor = title.find(is_thread_title_anchor)
             partial_link = anchor.get("href")
             link = f"https://www.walleyecentral.com/forums/{partial_link}"
             scrap_page(link, dir, True)
+        print()
 
 
 if __name__ == "__main__":
