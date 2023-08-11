@@ -139,7 +139,7 @@ def main():
 
     # Retrieve contents of all pages
     base_path = os.getcwd()
-    for page_index in range(1, 2):  # max_index + 1
+    for page_index in range(501, 701):  # max_index + 1
         # Create a new directory for each navigation page
         dir_name = f"forums-page-{page_index}"
         dir = os.path.join(base_path, f"content-wc", dir_name)
@@ -162,6 +162,7 @@ def main():
             anchor = title.find(is_thread_title_anchor)
             partial_link = anchor.get("href")
             link = f"https://www.walleyecentral.com/forums/{partial_link}"
+            print(link)
             scrap_page(link, dir, True)
         print()
 

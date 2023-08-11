@@ -1,0 +1,9 @@
+3439962,pwbmlr,2015-01-12 18:04:00,37,"Wondering if anyone else is having an issue with the Ontario Fishing Community website? Everytime I try to go to their website it shows an error #2000 and this message:You are not allowed to visit this community. Need Help?Click here to log inOur help documentationContact the community administratorI have tried my ipad, laptop, and desktop with different browsers. None work. Any idea's?"
+3440050,hogridnfool,2015-01-12 18:28:00,349,"I had a similar problem with lake-link.com once, after many months went by I was able to get back on the site, no explanation given. I am able to get on the site that you are talking about without any problems. http://ontariofishingcommunity.com/f...hp?showforum=2"
+3440354,67ZL1,2015-01-12 20:01:00,277,I've been having trouble getting on OFC tonight as well.
+3440802,Juls,2015-01-13 04:41:00,13414,"""You are not allowed to visit this community"".....Sounds like maybe you were banned from the site. Is that a possibility?"
+3440834,pwbmlr,2015-01-13 05:16:00,37,I highly doubt that since I never post on that website. I only go to view articles that are cross posted via this website.
+3440898,Juls,2015-01-13 05:50:00,13414,"I just clicked the link that hogridnfool posted, and the site seems to be working okay. Clear your history and cache...restart your browser....and see if that clears up your problem."
+3441218,pwbmlr,2015-01-13 07:36:00,37,Thanks Juls that worked!
+3442722,pwbmlr,2015-01-13 17:59:00,37,And now it is not allowing me to view the page again. Same error as before.I tried to email them for help and I got an email back saying it was a bad address I'm clueless as to what to do now.
+3446498,hogridnfool,2015-01-14 22:02:00,349,"Try a DNS flush. Click on Start, then All Programs, then accessories, then Command Prompt, in the Command Prompt window type in ipconfig/flushdns and then press Enter on your keyboard."
