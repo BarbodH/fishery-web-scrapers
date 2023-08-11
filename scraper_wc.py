@@ -135,11 +135,11 @@ def main():
     # Obtain the maximum number of pages
     nav_buttons = soup.find_all("td", class_="alt1")
     first_last_button = [button for button in nav_buttons if "Last" in button.text][0]
-    max_index = re.findall(r"\d+", first_last_button.a.get("href"))[-1]
+    max_index = int(re.findall(r"\d+", first_last_button.a.get("href"))[-1])
 
     # Retrieve contents of all pages
     base_path = os.getcwd()
-    for page_index in range(501, 701):  # max_index + 1
+    for page_index in range(1, max_index + 1):  # max_index + 1
         # Create a new directory for each navigation page
         dir_name = f"forums-page-{page_index}"
         dir = os.path.join(base_path, f"content-wc", dir_name)
