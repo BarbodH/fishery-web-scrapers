@@ -6,7 +6,7 @@ from datetime import datetime
 import csv
 
 
-def scrap_page(url, dir):
+def scrape_page(url, dir):
     # Initialization
     html_text = requests.get(url).text
     soup = BeautifulSoup(html_text, "lxml")
@@ -98,7 +98,7 @@ def main():
 
         link_spans = soup.find_all("span", class_="ipsType_break ipsContained")
         for span in link_spans:
-            scrap_page(span.a["href"], dir)
+            scrape_page(span.a["href"], dir)
 
 
 if __name__ == "__main__":

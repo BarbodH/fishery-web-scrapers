@@ -6,7 +6,7 @@ from datetime import datetime
 import csv
 
 
-def scrap_page(url, dir):
+def scrape_page(url, dir):
     # Initialization
     html_text = requests.get(url).text
     soup = BeautifulSoup(html_text, "lxml")
@@ -79,7 +79,7 @@ def main():
 
         links = soup.find_all("a", "bbp-topic-permalink")
         for link in links:
-            scrap_page(link["href"], dir)
+            scrape_page(link["href"], dir)
 
 
 if __name__ == "__main__":

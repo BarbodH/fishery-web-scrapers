@@ -6,7 +6,7 @@ import datetime
 import csv
 
 
-def scrap_page(url, dir, truncate_file):
+def scrape_page(url, dir, truncate_file):
     # Initialization
     html_text = requests.get(url).text
     soup = BeautifulSoup(html_text, "lxml")
@@ -87,7 +87,7 @@ def scrap_page(url, dir, truncate_file):
                 else:
                     new_url = f"{url}&page={new_page}"
 
-                scrap_page(new_url, dir, False)
+                scrape_page(new_url, dir, False)
 
 
 def is_thread_title(tag):
@@ -163,7 +163,7 @@ def main():
             partial_link = anchor.get("href")
             link = f"https://www.walleyecentral.com/forums/{partial_link}"
             print(link)
-            scrap_page(link, dir, True)
+            scrape_page(link, dir, True)
         print()
 
 
