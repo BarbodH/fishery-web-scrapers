@@ -30,12 +30,12 @@ def scrape_page(url, dir):
         for reply_div in reply_divs:
             if reply_div:
                 # Extract data corresponding to each response
-                id = re.search(r"\d+", reply_div["id"]).group()
+                id = re.search(r"\d+", reply_div.get("id")).group()
                 author = reply_div.find("h3", class_="cAuthorPane_author").text.strip()
 
-                date_raw = reply_div.find("a", class_="ipsType_blendLinks").time[
+                date_raw = reply_div.find("a", class_="ipsType_blendLinks").time.get(
                     "title"
-                ]
+                )
                 date = datetime.strptime(date_raw, "%m/%d/%Y %I:%M %p")
 
                 # For guest users, num_posts is not be available and should be wrapped with a try & except blocks
@@ -44,9 +44,9 @@ def scrape_page(url, dir):
                     num_posts = (
                         re.search(
                             r"\d{1,3}(?:,\d{3})*",
-                            author_panel.find("a", class_="ipsType_blendLinks")[
+                            author_panel.find("a", class_="ipsType_blendLinks").get(
                                 "title"
-                            ],
+                            ),
                         )
                         .group()
                         .replace(",", "")
@@ -55,9 +55,8 @@ def scrape_page(url, dir):
                     num_posts = 0  # indicating guest user
 
                 reply_paragraphs = reply_div.find(
-                    "div",
-                    class_="ipsType_normal ipsType_richText ipsPadding_bottom ipsContained",
-                ).find_all(is_immediate_p)
+                    "div", {"data-role": "commentContent"}
+                ).find_all(is_reply_p)
                 reply = " ".join(
                     [
                         paragraph.get_text().strip().replace("\n", " ")
@@ -68,9 +67,16 @@ def scrape_page(url, dir):
                 # Organize the extracted information into a CSV file
                 csv_writer.writerow([id, author, date, num_posts, reply])
 
+        pagination_next_button = soup.find("li", class_="ipsPagination_next")
+        if (
+            pagination_next_button
+            and not "ipsPagination_inactive" in pagination_next_button.get("class")
+        ):
+            scrape_page(pagination_next_button.a.get("href"), dir)
 
-def is_immediate_p(tag):
-    return tag.name == "p" and tag.parent.name != "blockquote"
+
+def is_reply_p(tag):
+    return tag.name == "p" and tag.parent.parent.name != "blockquote"
 
 
 def main():
@@ -79,8 +85,10 @@ def main():
     html_text = requests.get(base_url, "lxml").text
     soup = BeautifulSoup(html_text, "lxml")
 
-    # TODO: Obtain the maximum number of pages dynamically
-    max_index = 23
+    # Obtain the maximum number of pages
+    pagination_text = soup.find("li", class_="ipsPagination_pageJump").a.get_text()
+    pagination_indices = re.findall(r"\d+", pagination_text)
+    max_index = int(pagination_indices[1])
 
     # Retrieve contents of all pages
     base_path = os.getcwd()
@@ -98,7 +106,8 @@ def main():
 
         link_spans = soup.find_all("span", class_="ipsType_break ipsContained")
         for span in link_spans:
-            scrape_page(span.a["href"], dir)
+            scrape_page(span.a.get("href"), dir)
+            print(span.a.get("href"))
 
 
 if __name__ == "__main__":
