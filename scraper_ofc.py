@@ -4,6 +4,7 @@ import os
 import re
 from datetime import datetime
 import csv
+import sys
 
 
 def scrape_page(url, dir):
@@ -80,7 +81,20 @@ def is_reply_p(tag):
 
 
 def main():
-    base_url = "https://ontariofishingcommunity.com/forum/39-fishing-news/"
+    if len(sys.argv) >= 2:
+        # General discussion
+        if sys.argv[1] == "gd":
+            base_url = "https://ontariofishingcommunity.com/forum/2-general-discussion/"
+        # Fishing news
+        elif sys.argv[1] == "fn":
+            base_url = "https://ontariofishingcommunity.com/forum/39-fishing-news/"
+        else:
+            print("Error: Invalid string argument.")
+            return
+    # Default base url corresponds to fishing news since the dataset is smaller
+    # in case of accidental execution of the script.
+    else:
+        base_url = "https://ontariofishingcommunity.com/forum/39-fishing-news/"
 
     html_text = requests.get(base_url, "lxml").text
     soup = BeautifulSoup(html_text, "lxml")
@@ -95,7 +109,7 @@ def main():
     for page_index in range(1, max_index + 1):
         # Create a new directory for each navigation page
         dir_name = f"forums-page-{page_index}"
-        dir = os.path.join(base_path, f"content-ofc-fn", dir_name)
+        dir = os.path.join(base_path, f"content-ofc-gd", dir_name)
         if not os.path.exists(dir):
             os.makedirs(dir)
 
