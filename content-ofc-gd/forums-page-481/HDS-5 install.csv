@@ -1,0 +1,11 @@
+628016,ohhenrygsr,2011-10-05 14:16:00,947,"Hey Guys,  I was just wodering if you could give me some insight on what i'm doing wrong. My friend brought me his HDS-5 to install and the transducer plug won't fit in the sonar plug-in. The tag on the transducer cable is HST-WSBL. Do I have the correct plug?  "
+628018,BillM,2011-10-05 14:19:00,17367,Henry those pins are spaced way bigger then the female side of the plug.  No way that's going to fit (Unless it's going to be a really snug fit)   Did they give you the wrong transducer?
+628020,ohhenrygsr,2011-10-05 14:26:00,947,I think that's what i'm going to narrow it down to.
+628022,BillM,2011-10-05 14:29:00,17367,I just checked the Lowrance site and that transducer is compatible with the HDS units.
+628035,mercman,2011-10-05 15:33:00,7054,"Could be the right part number, but the wrong part in the package.I see that alot in my bussiness."
+628037,ohhenrygsr,2011-10-05 15:34:00,947,"Yes, I think it might be meant for the older Lowrance units. Maybe LMS and such"
+628269,Nipfisher,2011-10-06 02:50:00,2449,Just checked out my bullet transducer from my PPP-1 (portable unit for HDS) and it only has 3 pins in a semi-circle. Can't see the one on my boat now but gonna guess it is the same.  
+628370,scugpg,2011-10-06 16:03:00,1373,That model is the right transducer. Lowrance recently switched them to 5 pin instead of 7. There should be a notch in the spot it connects
+628372,scugpg,2011-10-06 16:10:00,1373,The connectors gray part lies wide part horizontal try both sides one should fit
+628514,Ron,2011-10-07 00:11:00,1683,"To me, it looks like you are trying to put the power up wire into your transducer plug in. Last I recall, there is not 3 wires coming from the transducer. However, there is 3 wires coming from the power cord and the power cord hooks up on the opposite side of the HDS 5"
+628656,ohhenrygsr,2011-10-07 16:06:00,947,Well the owner failed to tell me that the plastic insert came off the transducer side. He put it back together in the WRONG ORDER    This is the first time i've seen this happen. So i took the insert out and flipped it around. WOW it fits now LOL.  Thanks for all your help

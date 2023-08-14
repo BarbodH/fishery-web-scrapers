@@ -1,0 +1,11 @@
+602279,TJQ,2011-07-13 17:36:00,7806,I need help in writing th .htacces file for the old domain so that everything forwards to this new one.. and I cant get it to work. Can anyone help??
+602281,adolson,2011-07-13 17:39:00,783,"rewriteengine on rewritecond %{http_host} domain.old [nc] rewriterule ^(.*)$ http://domain.new/$1 [r=301,nc]  hope that helps!"
+602283,TJQ,2011-07-13 17:43:00,7806,is that all that needs to be there???
+602284,Raf,2011-07-13 17:46:00,3495,# This allows you to redirect your entire website to any other domain Redirect 301 / http://example.com/
+602285,adolson,2011-07-13 17:46:00,783,"Yep, should be. That's what I use on one of my domains, and it works. For example, if you try to go to http://www.tawkn.net/?user_id=1, it'll change it to the proper domain, tawkn.com, but still retain the rest of the URL/parameters at the end."
+602286,TJQ,2011-07-13 17:51:00,7806,Thanks Dana that worked!!!
+602287,adolson,2011-07-13 17:51:00,783,No problem!
+602299,Spiel,2011-07-13 18:27:00,9065," Yep, me too.   "
+602329,Terry,2011-07-13 19:38:00,14456,me too    well I didn't really try but I got caught up in the excitement  and said me too
+602331,Harrison,2011-07-13 19:40:00,2202, lol
+602336,mercman,2011-07-13 19:41:00,7054,    Git yer boat fixed yet Terry !!!?
