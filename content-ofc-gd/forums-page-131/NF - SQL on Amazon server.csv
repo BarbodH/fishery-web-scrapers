@@ -1,0 +1,5 @@
+966463,John Bacon,2016-04-14 21:48:00,3277,I hope some IT people can help me with an issue.I am trying to use an Amazon server for a software development environment.  The Server is running Windows Server 2012 R2.  The server came with SQL 2014 preinstalled.Windows authentication is not working when I try to sign into SQL.  Is there a defaul user ID / Password for opening SQL on an Amazon server?
+966464,DaveRoach,2016-04-14 21:56:00,202,User sa Password password Make sure the db is running as SQL services are disabled by default with Amazon
+966466,John Bacon,2016-04-14 22:18:00,3277,"Thanks, the credentials appear to be correct.  But now I get a ""No process is on the other end of the pipe"" message.  I hope that there is a simple fix for that."
+966479,DaveRoach,2016-04-14 23:44:00,202,http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMicrosoftSQLServerInstance.html Hope this helps its all I could find...
+966622,John Bacon,2016-04-16 04:07:00,3277,"Thanks for your help, I was able to get everything running."

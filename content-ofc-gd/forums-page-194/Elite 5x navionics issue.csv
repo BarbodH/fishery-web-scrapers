@@ -1,0 +1,10 @@
+894827,shimano19,2015-01-29 19:16:00,196,"I have a navionics chip in my elite 5x, some times it will show the depth contours and details and other times it will just show the shape of the lake and blue for water, any ideas what the issue is?"
+894828,BillM,2015-01-29 19:32:00,17367,"Same lake, same zoom level?"
+894951,shimano19,2015-01-30 03:39:00,196,"Yupp, zoomed in and out aswell"
+894953,ccmtcanada,2015-01-30 03:42:00,7971,Is it possible the map source changes from the navionics chip and the onboard lowrance maps?
+894990,Terry,2015-01-30 10:32:00,14456,Is it possible the map source changes from the navionics chip and the onboard lowrance maps? that's what I was thinking too
+894994,ecmilley,2015-01-30 11:48:00,2163,Sounds like its defaulting to lowrance maps makensurenyour chip contacts are clean and chip is seated fully
+895031,BillM,2015-01-30 14:26:00,17367,Is there a way to disable the default maps?
+895045,LucG,2015-01-30 15:20:00,779,"Sometimes this happens to my unit as well. I am unsure as to why, but I have figured out a solution that works every time. I shut down my unit, completely remove the chip, re-insert the chip, assuring it has clicked in all the way, then turn the unit back on. Works every time.  I've noticed it isn't difficult to ""unclick"" the chip accidentally, while trying to replace the rubber cover over the chip.  Hope this helps!"
+895048,shimano19,2015-01-30 15:33:00,196,I will try all those options
+895127,shimano19,2015-01-30 21:15:00,196,"All good now, it was on the lowrance charts"

@@ -1,0 +1,7 @@
+1001671,b_cdot,2017-04-25 04:22:00,270,So I was out on the river today and realized I cant isolate my bow unit from my console unit. (Ethernet connection). When i pick the source on one unit its changing them both. I run a bow and a transom transducer so I need these units isolated. The only way i was able to correct the problem was of course to unlpug my ethernet connection. As far as i know this is a new problem and was working fine on previous trips. Unless i didnt notice it. Any lowrance pros know whats going on?
+1001674,Mister G,2017-04-25 09:24:00,1429,You have to go into the menu and un-select sharing.
+1001676,b_cdot,2017-04-25 09:33:00,270,Will try. Thanks. Ill let ya know if it works
+1001677,b_cdot,2017-04-25 09:39:00,270, Will waypoints still be shared if i uncheck that sharing option?
+1001725,b_cdot,2017-04-25 21:18:00,270,Fixed! You really have to muck around with these new units. I can understand why ppl are intimidated by them.
+1001726,b_cdot,2017-04-25 21:19:00,270,"It wasn't exactly what you said but was able to figure it out. ""Network sonar"" on and off under my sonar options did the trick"
+1001727,Mister G,2017-04-25 21:40:00,1429,"Glad you figured it out..............each ""series"" have different options and then within that series there are different software options depending if you have a old software option or have the most recent software update.........so I really couldn't say press this, then that and then this..........computer ship is great when it works and sucks the big one when it doesn't.........."

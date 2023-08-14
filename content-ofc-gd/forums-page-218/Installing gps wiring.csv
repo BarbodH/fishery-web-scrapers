@@ -1,0 +1,16 @@
+868953,AdamS,2014-08-23 18:59:00,161,So I'm installing the new gps I got and I'm just wondering which battery do I hook the power to.  I've got a 24v trolling motor so 2 battery's for that plus 1 more.  Which one should I use? Any help is appreciated.  Thanks guys
+868954,mattp33,2014-08-23 19:06:00,290,"I think you will want to hook this to the single battery, I use the starting battery for mine."
+868955,misfish,2014-08-23 19:12:00,29133,"I think you will want to hook this to the single battery, I use the starting battery for mine.  Right answer ^^^^^^^"
+868957,Sinker,2014-08-23 19:14:00,8692,"Yep, hook it to the starting battery.  Hook it up to the two that are 24v and you could see some smoke!  S."
+868960,mattp33,2014-08-23 19:17:00,290,"Yep, hook it to the starting battery.  Hook it up to the two that are 24v and you could see some smoke!  S. not the good kind either!!!"
+868979,AdamS,2014-08-23 20:23:00,161,Thanks guys I probably would have hooked it to the 12v.  I just realized the supplied wire is too short to get to the battery so I have to teach myself some fuse panel basics:s
+868980,AdamS,2014-08-23 20:26:00,161,Also Lowrance instructions show the wires going to a 12v battery?
+868981,mattp33,2014-08-23 20:32:00,290,They just want you going to a 12v supply with a fuse.  If you have a fuse block in your boat like mine you can run power to a fuse and ground to a central grounding block that most blocks have.
+869045,AdamS,2014-08-24 02:58:00,161,"I didn't have an open fuse so I tried taping into one and grounding to a piece of metal but it wasn't an actual ground.  I didn't see a ground around the area. I think all I need to use is the black and red wire so should I be grounding the black one? That's what I tried, and I tried taping into 2 different wires with the red (one at a time) but I couldn't get the unit to power up.  Any ideas?"
+869054,Terry,2014-08-24 10:53:00,14456,"you don't want to ground things that way, always run wires  to + and -"
+869095,BillM,2014-08-24 16:01:00,17367,"you don't want to ground things that way, always run wires  to + and -  Yup.  Do it once, do it properly."
+869314,AdamS,2014-08-25 21:50:00,161,So any idea what to do if there is no ground at the fuse box?
+869316,misfish,2014-08-25 21:54:00,29133,There has to be a ground. Main ground.
+869318,Terry,2014-08-25 22:03:00,14456,"IMO you should not ground wiring on a boat, in the real meaning  of grounding  (do not use the boat as a ground)all DC voltage should be isolated from the boat you could/ should have a    - (grounding block)   near the fuses  if not run a - wire to the battery but if you gave a fuse block there has to be a wire for the  negative wire"
+869322,misfish,2014-08-25 22:15:00,29133," This is what I meant. When I had the ranger,there was a main ground block for everything."
+869401,Sinker,2014-08-26 03:13:00,8692,"Yep, there will be a ground block somewhere. Follow the negative wire off the battery, it might lead you to it.  Post the pics you texted me. Maybe someone here can help.  S."
