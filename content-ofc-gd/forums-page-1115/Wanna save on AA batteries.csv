@@ -1,0 +1,11 @@
+137712,Hooked,2007-11-28 16:34:00,891,"I couldn't believe this, check out this video:  <embed width=""448"" height=""361"" type=""application/x-shockwave-flash"" wmode=""transparent"" src=""http://img.photobucket.com/player.swf?file=http://vidmg.photobucket.com/albums/v61/Hooked/Battery.flv""></embed>"
+137716,tbayboy,2007-11-28 16:54:00,1497,"you could simply link it but most of the video sites have an 'embed' section of code/text somewhere on the page.  To use that you need to set the POST OPTIONS to HTML On - Auto Linebreak mode then paste in the embed text into it and you get something like this:  <object width=""425"" height=""355""><param name=""movie"" value="""
+137717,Hooked,2007-11-28 16:58:00,891,"Ahh, thanks aton Tbayboy!"
+137720,ccmtcanada,2007-11-28 17:05:00,7971,Hooked...I sent you a PM...guess you didn't see it in time.
+137724,fishindevil,2007-11-28 17:12:00,6254,"Both of those mini video clips are great especially the cats talking to eachother !!!!  ,and man what a way to save on batteries..  .i just get rechargable ones instead,they are cheap and work great...."
+137725,Hooked,2007-11-28 17:17:00,891,"Cliff sent me a link that may sway someone from applying what the video implies.  I may have to pull this video, certainly don't want to get someone hurt.  http://www.snopes.com/photos/humor/batteryhack.asp"
+137726,ccmtcanada,2007-11-28 17:20:00,7971,Another tell tale that it's not real is that 32 batteries times 1.5 volts is 48 volts....and it was taken from a 6 volt battery.
+137727,Hooked,2007-11-28 17:23:00,891,"  That was one of the first things I thought too.  But man, its on the Interweb, it must be true."
+137757,keram,2007-11-28 19:32:00,585," It is the matter how they are connected. In this case, it can be anything between 1.5V - 48V"
+137758,ccmtcanada,2007-11-28 19:34:00,7971, You are right keram...4 sets of 8 -  1.5 volt batteries hooked up in parallel would give you 6V...forgot about my basic physics...hehe
+137761,keram,2007-11-28 19:45:00,585,"Well, I've just ""opened"" (with hammer not screwdriver)  one of my batteries prepared for recycling and what is inside?? Just 4 ""type C"" diameter size batteries just double lenght, connected in series"

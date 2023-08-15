@@ -1,0 +1,12 @@
+128841,addy79,2007-11-01 14:48:00,573,I need to replace the coil packs and was wondering if any of you have done this for an Acura TL before....
+128844,douG,2007-11-01 14:57:00,2693,"http://cec.wustl.edu/~lrr1/coilpack/  Give this a read before you proceed, addy79.  Good Luck."
+128846,addy79,2007-11-01 15:00:00,573,thanks doug! good stuff
+128875,wingman,2007-11-01 16:45:00,16,"Hey, I used to work for honda. Why are you replacing them? are they faulty? I have never had to change them before cause they rarely go, but if you are gonna change them, there is a 10mm bolt that holds each one of them in. Unplug the connector for the coilpack and undo the bolt and they will come right out. Underneath the coil pack is a rubber sleeve that insulates the connector for the spark plug, so if it doesn't come out easy just pull up and twist it back and forth until it comes out."
+128890,addy79,2007-11-01 17:32:00,573,"sounds easy enough... 3 of my cylinders are misfiring (2,3,5) I've already done a tune up and added new plugs, but the problem is still persisting. I figure the next step would be to change the actual coils. hope it works!  thanks for the info wingman!"
+128912,ecmilley,2007-11-01 18:27:00,2163,"vI don't normally see 3 coils fail at the same time, with this engine make sure the egr passages are not plugged up and over didtributing exhaust gasses to 2,3,5"
+128957,addy79,2007-11-01 20:25:00,573,"i'll take a look at it, i guess i'll be able to tell by the sparkplugs and the amount of carbon buildup on em"
+128963,ecmilley,2007-11-01 20:38:00,2163,"one other thing is there could be one bad coil causing misfire codes on all 3 before pulling plugs and such, do a cylinder balance test( easiest way would be unhook idle motor with engine running and disconnect coil connecter from each coil and note rpm drop from each cylinder. ie rpm at idle 800 rpm unhook cyl#1 should drop at least 75 rpm, hooked it back up disconnect cyl#2 rpm drop is zero, that would be the problem cylinder"
+128964,addy79,2007-11-01 20:40:00,573,"ahhh nice!  good idea, i'll give that a try first, thanks for the tip ecmilley!!"
+128969,irishfield,2007-11-01 20:50:00,26272,"Just don't have your knee a 1/2"" back from a bare metal bumper when you do it!"
+129020,Weeds,2007-11-01 22:22:00,782,Well...better a knee than.....
+129071,Tybo,2007-11-02 00:08:00,1373,I use a spark tester.  It's a shocking experience to find out it's a bad wire.

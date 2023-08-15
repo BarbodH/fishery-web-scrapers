@@ -1,0 +1,8 @@
+140930,tapout,2007-12-09 14:56:00,166,"I was wondering if anyone could help me with a computer problem.  My sister's pc is ""skipping"" right on the start up and seems to get stuck there.  The screen briefly shows her pc make, and then briefly windows xp screen and then back to pc make and then windows xp screen and over and over.  Does anyone have any ideas as to what might be her problem and any possible remedies?  Tony."
+140933,Terry,2007-12-09 15:00:00,14456,I would go into safe mode and go back to a restore point
+140935,tapout,2007-12-09 15:02:00,166,Thanks Terry.  Now for the fun to begin.  How do I do that?
+140938,Terry,2007-12-09 15:11:00,14456,while it's booting up keep hitting F8..see if that puts you into the start page and go to safe mode...if it works
+140943,tapout,2007-12-09 15:22:00,166,"we've gotten to the start page and have selected safe mode and then it goes back to the ""skipping"" again."
+140947,Terry,2007-12-09 15:38:00,14456,I think you are in trouble
+140949,foggy,2007-12-09 15:44:00,38,"i dont want to scare you but when something similar to that happened to me , my hard drive was dead.  but im sure it could be many other less serious things as well."
+140950,foggy,2007-12-09 15:51:00,38,"this site ""cybertech"" is pretty helpful  http://www.cybertechhelp.com/forums/forumdisplay.php?f=16"
