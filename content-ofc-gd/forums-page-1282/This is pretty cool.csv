@@ -1,0 +1,9 @@
+26220,DanTheMan,2007-01-25 00:25:00,257,"1. go to a website with images on it 2. delete whatever's in the address bar 3. copy & paste the this in, hit enter     java script:R=0; x1=.1; y1=.05; x2=.25; y2=.24; x3=1.6; y3=.24; x4=300; y4=200; x5=300; y5=200; DI=document.getElementsByTagName(""img""); DIL=DI.length; function A(){for(i=0; i-DIL; i++){DIS=DI[ i ].style; DIS.position='absolute'; DIS.left=(Math.sin(R*x1+i*x2+x3)*x4+x5)+""px""; DIS.top=(Math.cos(R*y1+i*y2+y3)*y4+y5)+""px""}R++}setInterval('A()',5); void(0)"
+26222,walleyejigger,2007-01-25 00:29:00,876,"says ""check the spelling and try again""  ?????????? or COOOOOOOOL, i'm not sure yet"
+26224,Bernie,2007-01-25 00:31:00,3190,Didn't work for me either Dan
+26239,DanTheMan,2007-01-25 00:51:00,257,"Hmmm,  I tried copying and paste from my post and it does not work.But when I copy from the original post that where I got it from,it work  Really weird"
+26242,Dondorfish,2007-01-25 00:53:00,1000,Didn't work for me either Dan   Don
+26248,DanTheMan,2007-01-25 01:04:00,257,"Well, Im confuse.It works on other forums that I have posted it on.Thats really weird.I wonder if this forum blocks us from copy and pasting the original post?  Try and copy and paste from these other websites that I posted this on   http://www.newageangler.com/index.php?name...opic&t=2080  or  http://www.jfaclan.com/cgi-bin/yabb2/YaBB.pl?num=1169684724"
+26252,Dondorfish,2007-01-25 01:10:00,1000,Yup  That worked  - and thanks - now I am dizzy! Well  - dizzier then normal!   - LOL    But your right - pretty cool    Don
+26253,Rich Clemens,2007-01-25 01:10:00,3131,Works when copying from those other sites.   I think I have a headache now .... get it to STOP !!!!
+26330,Garyv,2007-01-25 04:00:00,547,Now you know why I quit drinking 30 years ago!
