@@ -1,0 +1,1 @@
+313112,ccmtcanada,2009-03-04 16:27:00,7971,Got this error....  Fatal error: Call to undefined method ipsclass::memory_debug_make_flag() in /home/ofncommu/public_html/forums/index.php on line 553  Guess there's still a few bugs to work out....  PHEW!

@@ -1,0 +1,8 @@
+478165,graham,2010-06-22 16:00:00,14,"Hey Guys,  I can't seem to find a wiring diagram so I can hook up 4 batteries to a 24 volt trolling motor. The 2 other batteries are to increase battery longevity, not power.  Any help is appreciated.  Thanks  Graham"
+478177,jedimaster,2010-06-22 16:23:00,3472,Label the batteries 1-4 Take 1 and 2 and connect negative on 1 to positive on 2 Take 3 and 4 and connect negative on 3 to positive on 4 take positive on 1 and 3 and join them  with a Y cable and this is your positive lead take negative on 2 and 4 and join them with a Y cable and this is your negative lead bada bing bada boom 24v
+478212,SlowPoke,2010-06-22 17:18:00,2984,Or two in parallel connected in series to two in parallel... just sayin'. Easier to charge two 12 v banks than two 24 v banks.
+478410,graham,2010-06-23 01:25:00,14,
+478411,graham,2010-06-23 01:25:00,14,"I'll try that jedi. Thanks guys,"
+478414,irishfield,2010-06-23 01:31:00,26272,What pokey said !!!  You'll need a 4 bank charger for the first example and a 2 bank for Slowpokes.
+478429,vinnimon,2010-06-23 02:06:00,2593,"  Older mack trucks ch series used 4 , 6 volt batteries in the same sequence to accomplish 12 volts. Series parallel circuits.2 on each side in series then combined into a parallel circuit.Easier to charge and gain the amp hr."
+478451,DRIFTER_016,2010-06-23 03:05:00,10439," Yep, I whipped up a quick diagram in paint for y'all. "
